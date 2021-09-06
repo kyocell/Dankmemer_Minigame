@@ -1,0 +1,137 @@
+body {
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: #181818;
+    font-family: 'Roboto', sans-serif;
+}
+
+.points-container {
+    margin-top: 3%;
+}
+
+.game-start-container {
+    border-radius: 50px;
+    margin: 10% 15% 0% 15%;
+    height: 70vh;
+    background-color: transparent;
+}
+
+.game-container {
+    background-color: transparent;
+    border-radius: 50px;
+    margin: 10% 15% 0% 15%;
+    height: 500px;
+}
+
+.dankmemer-logo {
+    margin-top: 5%;
+    width: 15vw;
+}
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 5%;
+    padding: 20px 40px 20px 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFFFFF;
+    color: black;
+    cursor: pointer;
+    box-shadow: #404040 0px 7px;
+    transition: transform 100ms, box-shadow 100ms, background-color 100ms;
+}
+
+.btn:hover {
+    background-color: #E4E6EB;
+}
+
+.btn:active {
+    transform: translateY(4px);
+    box-shadow: #404040 0px 3px;
+}
+
+
+.logic-container, .question-container {
+    text-align: center;
+    margin: 5% 10% 2% 10%;
+}
+
+.color, .word {
+    display: inline-block;
+    text-align: left;
+    padding: 0px 1% 0px 1%;
+    margin: 1%;
+    clear: both;
+    width: 20px;
+    color: white;
+}
+
+.answer-container {
+    margin: 0% 10% 5% 10%;
+    text-align: center;
+}
+
+.btn-submit {
+    margin: 20px;
+}
+
+.user-answer {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid;
+    border-bottom-color: black;
+    width: 200px;
+    padding: 10px 10px 10px 30px;
+    outline: none;
+    color: white;
+    transition: border-bottom-color 500ms;
+}
+
+.user-answer:hover {
+    border-bottom-color: white;
+}
+
+.solution, .result {
+    color: white;
+}
+
+.information-about {
+    display: none;
+    background-color: white;
+    right: 40%;
+    border: solid;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.information-how-to-play {
+    display: none;
+    background-color: white;
+    left: 40%;
+    border: solid;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.btn-info {
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 15px;
+    margin-top: 2%;
+    transition: text-decoration 500ms;
+}
+
+.btn-info:hover {
+    text-decoration: 2px underline grey;
+    text-underline-offset: 3px;
+}
+
+.btn-about:hover .information-about {
+    display: block;
+}
+
+.btn-how-to-play:hover .information-how-to-play {
+    display: block;
+}
