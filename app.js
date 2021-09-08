@@ -101,13 +101,22 @@ var combinationSet = {};
 var pointsCounter = 0;
 
 function gameConstructor() {
+    randomInt(0, 5);
+
     outputResult.style.display = "none";
     outputSolution.style.display = "none";
-    randomInt(0, 5);
+
     colorArray = [0, 1, 2, 3, 4, 5, 6, 7];
     wordArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+    
     colorArrayShuffled = arrayShuffle(colorArray);
     wordArrayShuffled = arrayShuffle(wordArray);
+
+    if (randomAiChoice == 0) {
+        logicContainer.style.borderLeftColor = 'grey'
+    } else {
+        logicContainer.style.borderLeftColor = colorLogic[randomAiChoice].color
+    }
     
     for (let i = 0; i < 5; i++) {
         initialSet[i] = colorArrayShuffled[i];
@@ -164,3 +173,25 @@ checkBtn.addEventListener('click', () => {
     }
     userInput.value = "";
 });
+
+const aboutBoxBtn = document.querySelector('.btn-about')
+const howtoplayBoxBtn = document.querySelector('.btn-how-to-play')
+const infoBoxOne = document.querySelector('.information-about');
+const infoBoxTwo = document.querySelector('.information-how-to-play')
+
+infoBoxOne.style.display = 'none'
+infoBoxTwo.style.display = 'none'
+
+aboutBoxBtn.addEventListener('mouseover', () => {
+    infoBoxOne.style.removeProperty('display');
+    setTimeout(function() {
+        infoBoxOne.style.display = 'none'
+    }, 2000)
+})
+
+howtoplayBoxBtn.addEventListener('mouseover', () => {
+    infoBoxTwo.style.removeProperty('display');
+    setTimeout(function() {
+        infoBoxTwo.style.display = 'none'
+    }, 2000)
+})

@@ -31,7 +31,7 @@ body {
 .btn {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    margin: 5%;
+    margin: 10%;
     padding: 20px 40px 20px 40px;
     border-radius: 10px;
     border: none;
@@ -51,16 +51,27 @@ body {
     box-shadow: #404040 0px 3px;
 }
 
+.btn-start {
+    padding: 40px 80px 40px 80px;
+}
 
-.logic-container, .question-container {
+.question-container {
     text-align: center;
     margin: 5% 10% 2% 10%;
+}
+
+.logic-container {
+    text-align: center;
+    margin: 5% 10% 2% 10%;
+    background-color: #404040;
+    border-radius: 20px;
+    border-left: 10px solid;
 }
 
 .color, .word {
     display: inline-block;
     text-align: left;
-    padding: 0px 1% 0px 1%;
+    padding: 5px 1% 5px 1%;
     margin: 1%;
     clear: both;
     width: 20px;
@@ -77,10 +88,9 @@ body {
 }
 
 .user-answer {
-    background-color: transparent;
+    background-color: #404040;
     border: none;
-    border-bottom: 2px solid;
-    border-bottom-color: black;
+    border-radius: 6px;
     width: 200px;
     padding: 10px 10px 10px 30px;
     outline: none;
@@ -97,7 +107,6 @@ body {
 }
 
 .information-about {
-    display: none;
     background-color: white;
     right: 40%;
     border: solid;
@@ -106,12 +115,11 @@ body {
 }
 
 .information-how-to-play {
-    display: none;
     background-color: white;
     left: 40%;
     border: solid;
     border-radius: 20px;
-    padding: 30px;
+    padding: 50px;
 }
 
 .btn-info {
@@ -126,12 +134,4 @@ body {
 .btn-info:hover {
     text-decoration: 2px underline grey;
     text-underline-offset: 3px;
-}
-
-.btn-about:hover .information-about {
-    display: block;
-}
-
-.btn-how-to-play:hover .information-how-to-play {
-    display: block;
 }

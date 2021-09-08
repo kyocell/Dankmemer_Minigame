@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="game.css">
     <script defer src="app.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <title>Dankmemer Guess Game</title>
+    <title>Dankmemer | plswork</title>
 </head>
 <body>
     <div class="game-start-container">
-        <center><img src="/imgs/dankmemer.png" alt="dankmemer-logo" class="dankmemer-logo"></center>
+        <!-- <center><img src="/imgs/dankmemer.png" alt="dankmemer-logo" class="dankmemer-logo"></center> -->
         <center><button class="btn-start btn"><strong>Start</strong></button></center>
         <center><button class="btn-about btn-info">About</button>
         <button class="btn-how-to-play btn-info">How to Play</button>
@@ -21,32 +21,34 @@
             A mini-game from Dankmemer Discord Bot's "pls work" command.<br><br>
             By Kyocell#1941
         </div>
-        <div class="information-how-to-play" style="color: black;">Please visit Dankmemer's "<a href="">Guide</a>" on how to play.</div></center>
+        <div class="information-how-to-play" style="color: black;">Once you press 'Start', you are presented with 5 colors paired with 5 words. Your objective is to memorize the color-word combinations. You will then be asked the color of a random word from the previous given combinations list.</div></center>
     </div>
     <div class="game-container">
         <center><div class="points-container" style="color: white;">
             <span>Points: - </span>
         </div></center>
         <div class="logic-container">
-            <div class="question-one">
-                <span class="color-0 color">-</span>
-                <span class="word-0 word" style="color: white;">-</span>
-            </div>
-            <div class="question-two">
-                <span class="color-1 color">-</span>
-                <span class="word-1 word" style="color: white;">-</span>
-            </div>
-            <div class="question-three">
-                <span class="color-2 color">-</span>
-                <span class="word-2 word" style="color: white;">-</span>
-            </div>
-            <div class="question-four">
-                <span class="color-3 color">-</span>
-                <span class="word-3 word" style="color: white;">-</span>
-            </div>
-            <div class="question-five">
-                <span class="color-4 color">-</span>
-                <span class="word-4 word" style="color: white;">-</span>
+            <div class="word-color-pair-container">
+                <div class="question-one">
+                    <span class="color-0 color">-</span>
+                    <span class="word-0 word" style="color: white;">-</span>
+                </div>
+                <div class="question-two">
+                    <span class="color-1 color">-</span>
+                    <span class="word-1 word" style="color: white;">-</span>
+                </div>
+                <div class="question-three">
+                    <span class="color-2 color">-</span>
+                    <span class="word-2 word" style="color: white;">-</span>
+                </div>
+                <div class="question-four">
+                    <span class="color-3 color">-</span>
+                    <span class="word-3 word" style="color: white;">-</span>
+                </div>
+                <div class="question-five">
+                    <span class="color-4 color">-</span>
+                    <span class="word-4 word" style="color: white;">-</span>
+                </div>
             </div>
         </div>
         <div class="countdown-container"></div>
@@ -54,7 +56,7 @@
             
         </div>
         <div class="answer-container">
-            <input type="text" class="user-answer" id="answer" name="answer" placeholder="Enter answer"><br>
+            <input type="text" class="user-answer" id="answer" name="answer" placeholder="Answer"><br>
             <center><button class="btn-submit btn">Check</button></center>
         </div>
         <div class="result-solution-container">
